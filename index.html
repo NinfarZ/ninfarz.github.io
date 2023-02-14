@@ -15,71 +15,116 @@
     <header class="header header--background">
         <div class="header-container">
             <h1 class="header-container__h1">
-                <span class="header-container__h1-hello">Hello!</span>
+                <span class="header-container__h1-hello">Hello~</span>
                 <span class="header-container__h1-name">I'm Tasso Lima.</span>
             </h1>
+
             <p class="header-container__p"></p>
         </div>
 
         <nav class="navbar navbar--rotate navbar--background">
-            <button class="nav__button nav__button--rotate nav__button--background">About Me</button>
-            <button class="nav__button nav__button--rotate nav__button--background">Projects</button>
-            <button class="nav__button nav__button--rotate nav__button--background">Skills</button>
-            <button class="nav__button nav__button--rotate nav__button--background">Contact</button>
+            <a class="nav__button nav__button--rotate nav__button--background">About Me</a>
+            <a href="#section-projects" class="nav__button nav__button--rotate nav__button--background">Projects</a>
+            <a href="#section-skills" class="nav__button nav__button--rotate nav__button--background">Skills</a>
+            <a class="nav__button nav__button--rotate nav__button--background">Contact</a>
         </nav>
 
     </header>
     <main class="main main--background">
         <section class="about-me about-me--background">
-            <h2 class="about-me__title">.About {</h2>
-            <p>animation: very animated to learn and explore;<br>
-                animation-duration: INFINITE;<br>
-                background: front end development and game development;<br>
 
-
-
-
-
-
-
-                <span class="about-me__title">}</span>
-            </p>
-
-
-
-
-
-            </p>
         </section>
-        <section class="projects projects--background">
-            <div class="projects-title-container">
-                <h3 class="projects__title">Projects</h3>
-                <img class="projects-arrows" src="img/arrows.gif" alt="">
-            </div>
+        <section id="section-projects" class="projects projects--background">
+
+            <h2 class="projects__title">Projects</h2>
+
+
 
             <div class="project-container project-container--background">
-
-                <a href="https://ninfar.itch.io/welcome-home" class="project__link">
+                <div class="project-container__card">
                     <p class="project__p-name">Welcome Home</p>
-                    <img src="img/NewTileScreen.png" alt="">
+                    <a href="https://ninfar.itch.io/welcome-home" class="project__link">
+                        <img class="project__img" src="img/NewTileScreen.png" alt="">
+                    </a>
+                    <p class="project-container__card-description">
+                        An ambitous horror game built in the <b>Godot Engine.</b>
+                        It was super fun and challenging to concieve and made me grow a lot as a developer.
+                        Features a wide range of randomized events and surprises that make every playtrhough unique.
+                    </p>
+                    <div class="project-footer-container">
+                        <button class="project-container__card-btn">Live</button>
+                        <button onclick="window.location.href='https://github.com/NinfarZ/Welcome-Home';"
+                            class="project-container__card-btn">Github</button>
+                    </div>
 
-                </a>
+                    <img class="scary-face" src="img/scaryFace.png" alt="">
 
-                <a href="https://ninfar.itch.io/welcome-home" class="project__link">
+                </div>
+
+
+                <div class="project-container__card">
                     <p class="project__p-name">Culprit Rush</p>
-                    <img src="img/NewTileScreen.png" alt="">
-                </a>
+                    <a href="https://ninfar.itch.io/welcome-home" class="project__link">
+                        <img class="project__img" src="img/CulpritRushScreenshot.png" alt="">
+                    </a>
+                    <p class="project-container__card-description">
+                        A feature rich murder mystery game built in <b>JavaScript / HTML / css.</b>
+                        Makes use of OOP and ES6.
+                    </p>
 
-                <a href="https://ninfar.itch.io/welcome-home" class="project__link">
-                    <p class="project__p-name">Sports Club Front Page</p>
-                    <img src="img/NewTileScreen.png" alt="">
-                </a>
+
+                    <div class="project-footer-container">
+                        <div class="project-tech">
+                            <img src="img/JSPxl.png" alt="">
+                            <img src="img/CSSPxl.png" alt="">
+                            <img src="img/htmlPxl.png" alt="">
+                        </div>
+                        <button class="project-container__card-btn">Live</button>
+                        <button onclick="window.location.href='https://github.com/NinfarZ/Culprit-Rush-HTML5';"
+                            class="project-container__card-btn">Github</button>
+                    </div>
+                </div>
+
+                <div class="project-container__card">
+                    <p class="project__p-name">This Portfolio</p>
+                    <a href="https://ninfar.itch.io/welcome-home" class="project__link">
+                        <img class="project__img" src="img/NewTileScreen.png" alt="">
+                    </a>
+                    <p class="project-container__card-description">
+                        I wanted this portfolio to have a lot of personality that matched the energy of the projects.
+                        In the end it probably ended up KINDA creepy especially if you turn on dark mode.
+                    </p>
+                    <div class="project-footer-container">
+                        <div class="project-tech">
+                            <img src="img/JSPxl.png" alt="">
+                            <img src="img/CSSPxl.png" alt="">
+                            <img src="img/htmlPxl.png" alt="">
+                        </div>
+                        <button class="project-container__card-btn">Live</button>
+                        <button onclick="window.location.href='https://github.com/NinfarZ/ninfarz.github.io';"
+                            class="project-container__card-btn">Github</button>
+                    </div>
+
+                </div>
 
             </div>
         </section>
-        <section class="skills">
-            <h4 class="skills__title">Skills</h4>
-            <p>HTML CSS JavaScript </p>
+        <section id="section-skills" class="skills">
+            <h3 class="skills__title skills__title--background">Skills</h3>
+            <div class="skills-container">
+                <p class="skills__p">I'm currently skilled at:</p>
+                <p class="skills__list"><span>HTML</span> <span>CSS</span> <span>JavaScript</span> <span>Godot
+                        Engine</span>
+                    <span>Python</span>
+                    <span>Git</span>
+                </p>
+                <p class="skills__p">I'm constantly learning. Soon these will join the list:</p>
+                <p class="skills__list"><span>React</span> <span>Unity Engine</span> <span>Blender</span></p>
+                <p class="skills__p">Skills I've aquired in the past that could be ressurected:</p>
+                <p class="skills__list"><span>Java</span> <span>C#</span></p>
+            </div>
+
+
 
         </section>
     </main>
