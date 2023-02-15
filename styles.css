@@ -66,12 +66,8 @@ body {
 
 
 .header-container {
-    position: relative;
     text-align: center;
-    margin: 0 0 0 50rem;
-    padding: 1rem 0 0 0;
-
-
+    margin: 0 5rem 0 0;
 }
 
 .header--background {
@@ -99,25 +95,41 @@ body {
     inset: 0;
     transform: skewY(-40deg) translateX(50%) translateY(60%);
     background-color: var(--black);
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .5),
+        inset 0 20px 30px -28px var(--orange-primary);
 }
 
 
 
-.header-container__h1 {
-    transform: translateX(-15%);
+.header-lamp-container {
+    position: absolute;
+    inset: 0;
+    transform: translateX(50%);
+    z-index: -1;
+
+}
+
+.header-lamp-container img {
+
+    box-shadow: 0 30px 20px -20px var(--orange-primary);
 }
 
 .header-container__h1-hello {
+    transform: rotate(10deg) translateY(90%) translateX(-10%);
     font-size: 5rem;
     color: var(--orange-primary);
+
+
 }
 
 
-.header-container__h1-name {
+.header-container__p-name {
+    transform: rotate(10deg) translateY(120%) translateX(-10%);
     font-size: 2.5rem;
     white-space: nowrap;
     color: var(--orange-secondary);
+
+
 
 }
 
@@ -135,8 +147,9 @@ body {
     align-items: center;
     flex-direction: row;
     gap: 5rem;
-    padding: 5rem 0 0 0;
+    padding: 5em 0 0 0;
     margin: 0 5rem 0 5rem;
+
 }
 
 .navbar--background {}
@@ -249,6 +262,18 @@ body {
     z-index: -1;
     background-color: var(--orange-primary);
     transform: skewY(-10deg) translateY(-50%);
+}
+
+.spiral-container {
+    display: flex;
+}
+
+.spiral__img:nth-of-type(1) {
+    transform: translateY(calc(-100% + 15vw));
+}
+
+.spiral__img:nth-of-type(2) {
+    transform: translateY(calc(-108% + 15vw));
 }
 
 
@@ -464,7 +489,7 @@ img {
     white-space: nowrap;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
     .navbar {
         flex-direction: column;
         gap: 1rem;
@@ -485,8 +510,12 @@ img {
 
 }
 
-@media (max-width: 1150px) {
-    .about-me {
-        padding: 2rem 5rem 5rem 5rem;
+/*tablet size*/
+@media (max-width: 1300px) {
+
+    .nav__button:hover::after,
+    .nav__button:hover::before {
+        content: '';
     }
+
 }
