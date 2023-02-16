@@ -13,7 +13,19 @@
 
 <body>
     <header class="header header--background">
+
+
+
+
+
         <div class="header-container">
+            <div class="header-lamp-container">
+                <div class="light-switch">
+                    <p>Light</p>
+                    <button class="change-theme__btn">ON/OFF</button>
+                </div>
+                <img class="lamp__img" src="img/lamp.png" alt="">
+            </div>
             <h1 class="header-container__h1-hello">
                 Hello~
             </h1>
@@ -22,26 +34,26 @@
             </p>
 
         </div>
-
         <nav class="navbar navbar--rotate navbar--background">
-            <a class="nav__button nav__button--rotate nav__button--background">About Me</a>
+            <a href="#section-about-me" class="nav__button nav__button--rotate nav__button--background">About Me</a>
             <a href="#section-projects" class="nav__button nav__button--rotate nav__button--background">Projects</a>
             <a href="#section-skills" class="nav__button nav__button--rotate nav__button--background">Skills</a>
-            <a class="nav__button nav__button--rotate nav__button--background">Contact</a>
+            <a href="#section-contact" class="nav__button nav__button--rotate nav__button--background">Contact</a>
         </nav>
-        <div class="header-lamp-container">
-            <img src="img/lamp.png" alt="">
-        </div>
 
 
     </header>
     <main class="main main--background">
-        <section class="about-me about-me--background">
+        <div class="main-top-decoration main-top-decoration--background">
             <div class="spiral-container">
                 <img class="spiral__img" src="img/spiral.png" alt="">
                 <img class="spiral__img" src="img/spiral2.png" alt="">
+                <img class="spiral__img" src="img/spiral.png" alt="">
+                <img class="spiral__img" src="img/spiral2.png" alt="">
+                <img class="spiral__img" src="img/spiral.png" alt="">
+                <img class="spiral__img" src="img/spiral2.png" alt="">
             </div>
-        </section>
+        </div>
         <section id="section-projects" class="projects projects--background">
 
             <h2 class="projects__title">Projects</h2>
@@ -60,24 +72,27 @@
                         Features a wide range of randomized events and surprises that make every playtrhough unique.
                     </p>
                     <div class="project-footer-container">
-                        <button class="project-container__card-btn">Live</button>
-                        <button onclick="window.location.href='https://github.com/NinfarZ/Welcome-Home';"
-                            class="project-container__card-btn">Github</button>
+                        <div class="project-container__btn-wrapper">
+                            <button class="project-container__card-btn">Live</button>
+                            <button onclick="window.location.href='https://github.com/NinfarZ/Welcome-Home';"
+                                class="project-container__card-btn">Github</button>
+                        </div>
+
                     </div>
 
-                    <img class="scary-face" src="img/scaryFace.png" alt="">
+                    <img class="scary-face hide-scary-face" src="img/scaryFace.png" alt="">
 
                 </div>
 
 
-                <div class="project-container__card">
+                <div class="project-container__card project-container__card--border-top">
                     <p class="project__p-name">Culprit Rush</p>
                     <a href="https://ninfar.itch.io/welcome-home" class="project__link">
                         <img class="project__img" src="img/CulpritRushScreenshot.png" alt="">
                     </a>
                     <p class="project-container__card-description">
                         A feature rich murder mystery game built in <b>JavaScript / HTML / css.</b>
-                        Makes use of OOP and ES6.
+                        Makes use of <b>OOP</b> and <b>ES6.</b>
                     </p>
 
 
@@ -87,20 +102,27 @@
                             <img src="img/CSSPxl.png" alt="">
                             <img src="img/htmlPxl.png" alt="">
                         </div>
-                        <button class="project-container__card-btn">Live</button>
-                        <button onclick="window.location.href='https://github.com/NinfarZ/Culprit-Rush-HTML5';"
-                            class="project-container__card-btn">Github</button>
+                        <div class="project-container__btn-wrapper">
+                            <button class="project-container__card-btn">Live</button>
+                            <button onclick="window.location.href='https://github.com/NinfarZ/Culprit-Rush-HTML5';"
+                                class="project-container__card-btn">Github</button>
+                        </div>
+
                     </div>
                 </div>
 
-                <div class="project-container__card">
+                <div class="project-container__card project-container__card--border-top">
                     <p class="project__p-name">This Portfolio</p>
                     <a href="https://ninfar.itch.io/welcome-home" class="project__link">
                         <img class="project__img" src="img/portfolioPic.png" alt="">
                     </a>
                     <p class="project-container__card-description">
-                        I wanted this portfolio to have a lot of personality that matched the energy of the projects.
-                        In the end it probably ended up KINDA creepy especially if you turn on dark mode.
+                        I wanted this page to match the
+                        energy of the projects whithin. I experimented with the CSS <b>BEM methodology</b> and used the
+                        <b>Intersection
+                            Observer API</b> for extra spice. At the end of the day, it's a bit on the spooky side if
+                        you turn
+                        on dark mode.
                     </p>
                     <div class="project-footer-container">
                         <div class="project-tech">
@@ -108,9 +130,12 @@
                             <img src="img/CSSPxl.png" alt="">
                             <img src="img/htmlPxl.png" alt="">
                         </div>
-                        <button class="project-container__card-btn">Live</button>
-                        <button onclick="window.location.href='https://github.com/NinfarZ/ninfarz.github.io';"
-                            class="project-container__card-btn">Github</button>
+                        <div class="project-container__btn-wrapper">
+                            <button class="project-container__card-btn">Live</button>
+                            <button onclick="window.location.href='https://github.com/NinfarZ/ninfarz.github.io';"
+                                class="project-container__card-btn">Github</button>
+                        </div>
+
                     </div>
 
                 </div>
@@ -131,7 +156,36 @@
                 <p class="skills__p">Skills I've aquired in the past that could be ressurected:</p>
                 <p class="skills__list"><span>Java</span> <span>C#</span></p>
             </div>
+        </section>
 
+        <section id="section-about-me" class="about-me about-me--background">
+            <div class="about-me-wrapper">
+                <h4 class="about-me__title about-me__title--background">About Me</h4>
+
+                <div class="about-me-container">
+
+
+                    <p class="about-me__p">I'm a software developer who loves to get creative.
+                        Programming is fun. Solving problems is thrilling, and turning an idea into a tangible product
+                        is a
+                        wonderful feeling.
+                        Art and music producing are two big hobbies of mine, and together with code, the possibilities
+                        are
+                        endless.
+                        Something I'd love to see doesn't exist? Well, time to do it myself.
+                    </p>
+                </div>
+            </div>
+            <div id="section-contact" class="about-me-contact">
+                <h5 class="about-me__title contact__title--background">Contact</h5>
+                <div class="contact-details">
+                    <p>tassolima2@gmail.com</p>
+                    <a href="https://github.com/NinfarZ">My Github</a></p>
+
+                </div>
+
+
+            </div>
 
 
         </section>
