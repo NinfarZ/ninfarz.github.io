@@ -52,6 +52,7 @@ video {
     --header-foreground-border: none;
     --card-background: var(--white);
     --header: var(--white);
+    --header-2: var(--black);
     --text: var(--black);
     --text-shadow: none;
 
@@ -73,6 +74,7 @@ video {
     --header-foreground-border: solid 3px var(--secondary);
     --card-background: var(--black);
     --header: hsl(240, 2%, 91%);
+    --header-2: hsl(240, 2%, 91%);
     --text: var(--white);
     --text-shadow: 0 0 10px var(--secondary);
 
@@ -227,7 +229,7 @@ b {
 .nav__button {
     font-size: 2rem;
     padding: 0 1rem 0 1rem;
-    margin: 1rem 1rem 5rem 1rem;
+    margin: 1rem 1rem 1rem 1rem;
     position: relative;
     white-space: nowrap;
 
@@ -377,7 +379,7 @@ b {
     font-size: 3rem;
     text-align: center;
     letter-spacing: 0.5rem;
-    color: var(--header);
+    color: var(--header-2);
     border-bottom: 2px solid var(--primary);
     margin: 0 2rem 0 2rem;
 
