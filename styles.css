@@ -415,15 +415,13 @@ b {
 .project-container {
     display: grid;
     column-gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     margin: 2rem;
 
 }
 
 .project__img {
-    width: 100%;
-    height: auto;
-
+    aspect-ratio: 16/9;
     object-fit: cover;
     border: 5px dashed var(--primary);
     box-shadow: 0 0 5px 0 var(--shadow);
@@ -454,10 +452,6 @@ b {
     justify-content: space-between;
 }
 
-.project-container__card--border-top {
-    border-top: none;
-}
-
 
 .project-container__card-description {
 
@@ -480,9 +474,14 @@ b {
     text-decoration: none;
 }
 
+.project-container__btn-wrapper {
+    transform: skew(10deg);
+}
+
 .project-container__card-btn {
 
-    padding: .5rem;
+    padding: .5rem 1rem;
+
     background-color: var(--secondary);
     color: var(--black);
     border: none;
@@ -492,8 +491,10 @@ b {
 
 .project-footer-container {
     display: flex;
-    justify-content: flex-end;
-    position: relative;
+    justify-content: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+
 
 
 }
@@ -595,7 +596,7 @@ b {
 
     display: grid;
 
-    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 
 }
 
@@ -674,7 +675,12 @@ b {
 }
 
 .contact-details a {
-    color: var(--secondary);
+    margin-top: 1.5rem;
+    fill: var(--secondary);
+}
+
+.contact-details a:hover {
+    fill: var(--hover);
 }
 
 
@@ -711,13 +717,13 @@ b {
     .project-container {
         display: grid;
         column-gap: 2rem;
-        grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
         margin: 3em 3em 3em 3em;
     }
 
     .project-container__card--border-top {
         border-top: dashed 5px var(--grey);
-        box-shadow: -3px 5px 5px 0 var(--shadow);
+
     }
 
 
