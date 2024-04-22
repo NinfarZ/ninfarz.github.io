@@ -71,7 +71,7 @@ video {
     --background: var(--black);
     --frontground: var(--grey);
     --header-foreground: none;
-    --header-foreground-border: solid 3px var(--secondary);
+    --header-foreground-border: dotted 3px var(--secondary);
     --card-background: var(--black);
     --header: hsl(240, 2%, 91%);
     --header-2: hsl(240, 2%, 91%);
@@ -84,11 +84,14 @@ body {
     font-family: 'Roboto Mono', monospace;
     color: var(--black);
     line-height: 1.5;
+    
 }
 
 b {
     font-weight: bold;
-    text-decoration: underline;
+    font-size: 1.3rem;
+    color: var(--secondary);
+    
 }
 
 .light-switch {
@@ -232,6 +235,8 @@ b {
     margin: 1rem 1rem 1rem 1rem;
     position: relative;
     white-space: nowrap;
+    transition: padding 1s;
+    
 
 }
 
@@ -240,6 +245,7 @@ b {
     color: var(--black);
     border: none;
     text-decoration: none;
+    
 
 
 
@@ -255,6 +261,7 @@ b {
 .nav__button:hover {
 
     background: var(--hover);
+    
     box-shadow: 0 0 5px 0 var(--shadow);
 }
 
@@ -308,9 +315,9 @@ b {
 .main-top-decoration--background {
     position: relative;
     aspect-ratio: 1 / 0.2;
-
     isolation: isolate;
     overflow: hidden;
+   
 }
 
 .main-top-decoration--background::before {
@@ -319,11 +326,21 @@ b {
     inset: 0;
     z-index: -1;
     background-color: var(--primary);
-    transform: skewY(-10deg) translateY(-50%);
+    transform: skewY(-10deg) translateY(-50%) ;
 }
 
 .spiral-container {
     display: flex;
+    position: absolute;
+    inset: 0;
+}
+
+.spiral__img {
+    transition: padding 0.2s;
+}
+
+.spiral__img:hover {
+    padding-bottom: 5rem;
 }
 
 .spiral__img:nth-of-type(1) {
@@ -373,17 +390,18 @@ b {
 
 .projects {
     margin-top: 4rem;
+    
 }
 
 .projects__title {
-    font-size: 3rem;
+    font-size: 5rem;
     text-align: center;
     letter-spacing: 0.5rem;
     color: var(--header-2);
     border-bottom: 2px solid var(--primary);
     margin: 0 2rem 0 2rem;
 
-    text-shadow: var(--text-shadow);
+  
 }
 
 .projects-title-container {
@@ -416,22 +434,24 @@ b {
     display: grid;
     column-gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    margin: 2rem;
+    margin: 5rem;
+    
 
 }
 
 .project__img {
     aspect-ratio: 16/9;
     object-fit: cover;
-    border: 5px dashed var(--primary);
+    border: 10px dashed var(--primary);
     box-shadow: 0 0 5px 0 var(--shadow);
-
+    
 }
 
 .project-container__card {
     position: relative;
     display: flex;
     flex-direction: column;
+    
 
     min-height: 42rem;
 
@@ -475,16 +495,18 @@ b {
 }
 
 .project-container__btn-wrapper {
-    transform: skew(10deg);
+    
 }
 
 .project-container__card-btn {
 
-    padding: .5rem 1rem;
+    padding: 1rem 2rem;
 
     background-color: var(--secondary);
     color: var(--black);
     border: none;
+    
+    
 
 }
 
@@ -531,11 +553,17 @@ b {
 .skills {
     margin-top: 5rem;
     text-align: center;
+   
 
 }
 
 .skills-container {
-    margin: 5rem 2rem 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80rem;
+    margin: 5rem auto;
+    padding: 0 2rem;
 }
 
 .skills__p {
@@ -686,8 +714,10 @@ b {
 
 .about-me-container {
 
-    margin: 2rem;
-    padding: 1em 1em 1em 1em;
+    margin: 5rem auto;
+    padding: 0 2rem;
+   
+    max-width: 40rem;
 
     color: var(--text);
 
