@@ -215,8 +215,7 @@ b {
 
 
 .navbar {
-    position: sticky;
-    top: 0;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -524,6 +523,11 @@ b {
     
     
 
+}
+
+.disable-btn {
+    pointer-events: none;
+    opacity: 50%;
 }
 
 
