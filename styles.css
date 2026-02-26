@@ -398,6 +398,9 @@ b {
     margin-top: 4rem;
     margin-bottom: 10rem;
     
+   
+   
+    
 }
 
 .projects__title {
@@ -441,7 +444,10 @@ b {
     display: grid;
     column-gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-    margin: 5rem;
+    margin: 5rem auto;
+    max-width: 1440px;
+
+    
     
 
 }
@@ -633,6 +639,7 @@ b {
     display: grid;
 
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    
 
 }
 
@@ -643,6 +650,7 @@ b {
 .about-me-wrapper {
     position: relative;
     isolation: isolate;
+    
 
 }
 
