@@ -24,7 +24,7 @@
                     <p>Light</p>
                     <button class="change-theme__btn">ON/OFF</button>
                 </div>
-                <img class="lamp__img" src="img/lamp.png" alt="">
+                <img fetchpriority="high" class="lamp__img" src="img/lamp.png" alt="">
             </div>
             <h1 class="header-container__h1-hello">
                 Hello~
@@ -46,12 +46,12 @@
     <main class="main main--background">
         <div class="main-top-decoration main-top-decoration--background">
             <div class="spiral-container">
-                <img class="spiral__img" src="img/spiral.png" alt="">
-                <img class="spiral__img" src="img/spiral2.png" alt="">
-                <img class="spiral__img" src="img/spiral.png" alt="">
-                <img class="spiral__img" src="img/spiral2.png" alt="">
-                <img class="spiral__img" src="img/spiral.png" alt="">
-                <img class="spiral__img" src="img/spiral2.png" alt="">
+                <img fetchpriority="high" class="spiral__img" src="img/spiral.png" alt="">
+                <img fetchpriority="high" class="spiral__img" src="img/spiral2.png" alt="">
+                <img fetchpriority="high" class="spiral__img" src="img/spiral.png" alt="">
+                <img fetchpriority="high" class="spiral__img" src="img/spiral2.png" alt="">
+                <img fetchpriority="high" class="spiral__img" src="img/spiral.png" alt="">
+                <img fetchpriority="high" class="spiral__img" src="img/spiral2.png" alt="">
             </div>
         </div>
         <section id="section-projects" class="projects projects--background">
@@ -69,12 +69,9 @@
                             <p class="project__p-name ">Equity Curve Visualizer</p>
 
 
-                            <img class="project__img" src="img/equity-curve.png" alt="">
+                            <img loading="lazy" class="project__img" src="img/equity-curve.png" alt="">
                             <p class="project-container__card-description">
-                                Built with <b>React</b>, <b>Chart.js</b> and papaParse
-                                to visualize trading performance. It features dynamic equity curve rendering, customizable
-                                timeframes, and interactive tooltips for detailed trade insights. I implemented efficient
-                                data parsing to ensure smooth performance even with large datasets.
+                                Built with <b>React</b>, <b>Chart.js</b> to visualize trading performance with strong downtrends being highlighted with lines. The program reads several large CSV datasets and parses them efficiently using <b>papaParse</b>.
                                 </b>
                             </p>
 
@@ -102,7 +99,7 @@
                         <div class="project-container__card-wrapper">
                             <p class="project__p-name ">Real Estate Website</p>
 
-                            <img class="project__img" src="img/kuckrealestate.png" alt="">
+                            <img loading="lazy" class="project__img" src="img/kuckrealestate.png" alt="">
                             <p class="project-container__card-description">
                                 I built a modern real estate platform using <b>React Router</b>, <b>Tailwind CSS</b>, and <b>React i18next</b> for seamless multilingual support. The platform features dynamic property listings powered by APIs and an interactive search filter for an intuitive user experience. I also optimized for <b>SEO</b> and performance, ensuring fast load times and smooth navigation across devices.
                             </p>
@@ -126,7 +123,7 @@
                     <div class="project-container__card ">
                         <div class="project-container__card-wrapper">
                             <p class="project__p-name ">Culprit Rush</p>
-                            <img class="project__img" src="img/culpritRush.png" alt="">
+                            <img loading="lazy" class="project__img" src="img/culpritRush.png" alt="">
                             <p class="project-container__card-description">
                                 A replayable, feature-rich murder mystery built with <b>JavaScript</b>, <b>HTML</b>, and <b>CSS</b>.
                                 Implemented using <b>ES6</b> and <b>OOP</b> patterns, the game simulates autonomous
@@ -158,7 +155,7 @@
                     <div class="project-container__card ">
                         <div class="project-container__card-wrapper">
                             <p class="project__p-name ">Sportsclub Website</p>
-                            <img class="project__img" src="img/lmra.png" alt="">
+                            <img loading="lazy" class="project__img" src="img/lmra.png" alt="">
                             <p class="project-container__card-description">
                                 A responsive website for a local sports club, built with <b>Tanstack Router</b> and <b>Tailwind CSS</b>.
                                 The site features a fun modern design, levereging <b>Content Collections</b> for easy updates to events and news. Currenly in development and will be completed soon.
@@ -204,7 +201,7 @@
                     <div class="project-container__card ">
                         <div class="project-container__card-wrapper">
                             <p class="project__p-name ">Welcome Home</p>
-                        <img class="project__img" src="img/NewTileScreen.png" alt="">
+                        <img loading="lazy" class="project__img" src="img/NewTileScreen.png" alt="">
                             <p class="project-container__card-description">
                                 An ambitous horror game built in the <b>Godot Engine.</b>
                                 Not a front-end project. But I'm proud of it and made me grow a lot as a developer.
@@ -227,7 +224,7 @@
 
                         </div>
 
-                        <img class="scary-face hide-scary-face" src="img/scaryFace.png" alt="scary-face">
+                        <img loading="lazy" class="scary-face hide-scary-face" src="img/scaryFace.png" alt="scary-face">
 
                     </div>
                 
@@ -268,14 +265,13 @@
                 <div class="about-me-container">
 
 
-                    <p class="about-me__p">I'm a software developer who loves to get creative.
-                        Programming is fun. Solving problems is thrilling, and turning an idea into a tangible product
-                        is a
-                        wonderful feeling.
-                        Art and music producing are two big hobbies of mine, and together with code, the possibilities
-                        are
-                        endless.
-                        Something I'd love to see doesn't exist? Well, time to do it myself.
+                    <p class="about-me__p">I'm a Frontend Developer with 2 years of
+experience crafting responsive, creative
+web applications. Proficient in HTML, CSS,
+JavaScript and React, with a strong eye for
+design, usability, and performance.
+Experienced in building scalable UIs,
+optimizing SEO and load times.
                     </p>
                 </div>
             </div>
