@@ -5,9 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tasso's Portfolio">
     <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+
+    <link rel="preload" href="styles.css" as="style" />
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" as="style" onload="this.rel='stylesheet'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    </noscript>
+    <link rel="preload" href="img/spiral.png" as="image" type="image/png" />
+    <link rel="preload" href="img/spiral2.png" as="image" type="image/png" />
     <script defer src="app.js"></script>
 </head>
 
@@ -69,7 +80,10 @@
                             <p class="project__p-name ">Equity Curve Visualizer</p>
 
 
-                            <img loading="lazy" class="project__img" src="img/equity-curve.png" alt="">
+                            <picture>
+                                <source type="image/avif" srcset="img/equity-curve.avif">
+                                <img loading="lazy" class="project__img" src="img/equity-curve.png" alt="">
+                            </picture>
                             <p class="project-container__card-description">
                                 Built with <b>React</b>, <b>Chart.js</b> to visualize trading performance with strong downtrends being highlighted with lines. The program reads several large CSV datasets and parses them efficiently using <b>papaParse</b>.
                                 </b>
@@ -99,7 +113,10 @@
                         <div class="project-container__card-wrapper">
                             <p class="project__p-name ">Real Estate Website</p>
 
-                            <img loading="lazy" class="project__img" src="img/kuckrealestate.png" alt="">
+                            <picture>
+                                <source type="image/avif" srcset="img/kuckrealestate.avif">
+                                <img loading="lazy" class="project__img" src="img/kuckrealestate.png" alt="">
+                            </picture>
                             <p class="project-container__card-description">
                                 I built a modern real estate platform using <b>React Router</b>, <b>Tailwind CSS</b>, and <b>React i18next</b> for seamless multilingual support. The platform features dynamic property listings powered by APIs and an interactive search filter for an intuitive user experience. I also optimized for <b>SEO</b> and performance, ensuring fast load times and smooth navigation across devices.
                             </p>
@@ -123,7 +140,10 @@
                     <div class="project-container__card ">
                         <div class="project-container__card-wrapper">
                             <p class="project__p-name ">Culprit Rush</p>
-                            <img loading="lazy" class="project__img" src="img/culpritRush.png" alt="">
+                            <picture>
+                                <source type="image/avif" srcset="img/culpritRush.avif">
+                                <img loading="lazy" class="project__img" src="img/culpritRush.png" alt="">
+                            </picture>
                             <p class="project-container__card-description">
                                 A replayable, feature-rich murder mystery built with <b>JavaScript</b>, <b>HTML</b>, and <b>CSS</b>.
                                 Implemented using <b>ES6</b> and <b>OOP</b> patterns, the game simulates autonomous
@@ -155,7 +175,10 @@
                     <div class="project-container__card ">
                         <div class="project-container__card-wrapper">
                             <p class="project__p-name ">Sportsclub Website</p>
-                            <img loading="lazy" class="project__img" src="img/lmra.png" alt="">
+                            <picture>
+                                <source type="image/avif" srcset="img/lmra.avif">
+                                <img loading="lazy" class="project__img" src="img/lmra.png" alt="">
+                            </picture>
                             <p class="project-container__card-description">
                                 A responsive website for a local sports club, built with <b>Tanstack Router</b> and <b>Tailwind CSS</b>.
                                 The site features a fun modern design, levereging <b>Content Collections</b> for easy updates to events and news. Currenly in development and will be completed soon.
@@ -177,7 +200,10 @@
                     <div class="project-container__card ">
                         <div class="project-container__card-wrapper">
                             <p class="project__p-name ">Language Learning Platform</p>
-                            <img class="project__img" src="img/language.png" alt="">
+                            <picture>
+                                <source type="image/avif" srcset="img/language.avif">
+                                <img loading="lazy" class="project__img" src="img/language.png" alt="">
+                            </picture>
                             <p class="project-container__card-description">
                                 A full stack platform built with <b>NextJS</b>, <b>TypeScript</b>, <b>Tailwind CSS</b> and <b>Shadcn/ui</b> to aid in the language learning process. State is managed with <b>Zustand</b> and data is store in <b>MongoDB</b>. You can create flash cards based on context, as well as read texts you import. Sentences you already know or need to practice will be highlighted. This project is still in early development, but I'm excited about the potential and will be working on it with time.
                             </p>
@@ -201,9 +227,12 @@
                     <div class="project-container__card ">
                         <div class="project-container__card-wrapper">
                             <p class="project__p-name ">Welcome Home</p>
-                        <img loading="lazy" class="project__img" src="img/NewTileScreen.png" alt="">
+                        <picture>
+                            <source type="image/avif" srcset="img/welcomehome.avif">
+                            <img loading="lazy" class="project__img" src="img/NewTileScreen.png" alt="">
+                        </picture>
                             <p class="project-container__card-description">
-                                An ambitous horror game built in the <b>Godot Engine.</b>
+                                An ambitous horror game built with the <b>Godot Engine</b> and <b>Blender</b>.
                                 Not a front-end project. But I'm proud of it and made me grow a lot as a developer.
                                 Features a wide range of randomized events and surprises that make every playthrough
                                 unique. I implemented <b>state machines</b>, <b>path finding</b>, <b>raycasting</b>,
